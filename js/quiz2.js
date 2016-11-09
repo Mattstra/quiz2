@@ -6,10 +6,34 @@
 //  - finally, write a function that makes you happy :D (as in, have some fun a write something cool, it's up to you!)
 
 (function($){
-	$('.links li a').on('click', function(e) {
-		e.preventDefault()
-		alrt('you clicked a link, good for you');
+	$('.links li a').click(function(e) {
+		e.preventDefault();
+		alert('you clicked a link, good for you');
 	});
 
 	console.log("this is a message for you!!!")
-})(jQery);
+});
+
+function makeHappy() {
+	console.log("This says that I am happy");
+}
+
+function loopList() {
+	document.getElementById("ordered");
+	for(i=0; i < ordered.length; i++)
+	{
+		ordered[i].style.color = FF0000;
+		ordered[i].style.fontFamily = Times;
+	}
+
+}
+
+function fade() {
+	$("body").fadeOut();
+	jQuery("body").html("Goodbye for now");
+}
+
+function accordion()
+{
+
+}
